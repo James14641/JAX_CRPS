@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="JAX_CRPS",
-    version="0.1.0",
+    version="0.1.1",
     description="A simple package implementing the Continuous Ranked Probability Score (CRPS) using JAX",
     author="James Woodfield",
     author_email="notmyemail@dontwebscrapeme.com",
