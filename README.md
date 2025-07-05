@@ -2,7 +2,7 @@
 Autodifferentiable implementation of the Continous Rank Probability Score CRPS in JAX.
 
 ## 📦 Installation
-To install this package locally in editable mode:
+To install this package:
 
 ```bash
 pip install JAX-CRPS==0.1.0
@@ -28,8 +28,12 @@ crps_mean_value = jax_crps_mean(observation, forecast)
 print("CRPS at each location:", crps_values)
 print("CRPS averaged:", crps_mean_value)
 ```
-Note: jax_crps expects forecast shape (..., D, E)
+Note: jax_crps expects:
+     observation shape (..., D) or (..., D, 1)
+     forecast shape (..., D, E)
 
-### dependencies
-jax
+or a specified axis (not recomended)
+
+### Dependency:
+- jax
 https://docs.jax.dev/en/latest/quickstart.html
