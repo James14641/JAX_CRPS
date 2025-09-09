@@ -33,10 +33,8 @@ print("CRPS at each location:", crps_values)
 print("CRPS averaged:", crps_mean_value)
 ```
 Note: jax_crps expects:
-     observation shape (..., D) or (..., D, 1)
+     observation shape (..., D) 
      forecast shape (..., D, E)
-
-or a specified axis (not recomended)
 
 ### Dependency:
 - jax
